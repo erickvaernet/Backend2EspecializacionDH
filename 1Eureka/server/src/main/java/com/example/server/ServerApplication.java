@@ -1,13 +1,13 @@
-package com.example.weatherservice;
+package com.example.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WeatherServiceApplication {
+public class ServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WeatherServiceApplication.class, args);
+		SpringApplication.run(ServerApplication.class, args);
 	}
 
 }
