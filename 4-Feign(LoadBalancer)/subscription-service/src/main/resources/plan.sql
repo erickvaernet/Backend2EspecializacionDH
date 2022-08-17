@@ -1,0 +1,1 @@
+insert into plans(id, name,price)values(1,'Gold',500)
