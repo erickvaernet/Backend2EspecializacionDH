@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: image-service
+  cloud:
+    config:
+      enable: true
+      service-id: config-service
+  profiles:
+    active: prod
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+
+info:
+  app:
+    name: image-service
+    description: Image Service
+    version: 1.0.0
